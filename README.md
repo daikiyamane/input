@@ -2,11 +2,11 @@
 
 ## Installation
 ```bash
-go get github.com/daikiyamane/goin
+go get github.com/daikiyamane/goinput
 ```
 
 ```go
-import "github.com/daikiyamane/goin"
+import "github.com/daikiyamane/goinput"
 ```
 
 
