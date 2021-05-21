@@ -9,7 +9,7 @@ import (
 
 var sc = bufio.NewScanner(os.Stdin)
 
-// 1つintを返す
+// Return a int
 // input 1
 // output 1
 func NextInt() int {
@@ -20,7 +20,7 @@ func NextInt() int {
 	return ret
 }
 
-// 1つのstringを返す
+// Return a string
 // input 1
 // output "1"
 func NextString() string {
