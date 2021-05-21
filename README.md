@@ -1,8 +1,8 @@
-# input
+# goin
 
 ## Installation
 ```bash
-go get github.com/daikiyamane/input
+go get github.com/daikiyamane/go-input
 ```
 
 ```go
