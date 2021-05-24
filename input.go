@@ -9,6 +9,19 @@ import (
 
 var sc = bufio.NewScanner(os.Stdin)
 
+func StrConversionInt(w string) int {
+	str, err := strconv.Atoi(w)
+	if err != nil {
+		panic(err)
+	}
+	return str
+}
+
+func IntConversionStr(n int) string {
+	str := strconv.Itoa(n)
+	return str
+}
+
 // Return a int
 // input 1
 // output 1
@@ -172,6 +185,26 @@ func TwoLinesReadInt(n int) ([]int, []int) {
 	y := []int{}
 	for _, v := range xy {
 		x = append(x, v[0])
+		y = append(y, v[1])
+	}
+	return x, y
+}
+
+// Return int & string slices lines
+/*
+input
+1 a
+2 b
+3 c
+output
+[1 2 3] ["a" "b" "c"]
+*/
+func TwoLinesReadIntString(n int) ([]int, []string) {
+	xy := LinesReadString(n)
+	x := []int{}
+	y := []string{}
+	for _, v := range xy {
+		x = append(x, StrConversionInt(v[0]))
 		y = append(y, v[1])
 	}
 	return x, y
